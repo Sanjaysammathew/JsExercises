@@ -17,3 +17,16 @@ function RemoveDuplicates() {
 
 CreatingArrays();
 RemoveDuplicates();
+
+
+let str1 = prompt("Enter a String"); // Prompt user for input
+let sentence = str1.split(""); // Split the string into individual characters
+let vowels = ["a", "e", "i", "o", "u"]; // Define vowels
+
+function shortcut() {
+  let filtered = sentence.filter(char => !vowels.includes(char.toLowerCase())); 
+  // Keep only characters that are NOT vowels
+  console.log(filtered.join("")); // Join the array back into a string
+}
+
+shortcut();
